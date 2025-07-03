@@ -6,7 +6,7 @@ const MyWork = () => {
     <>
       <div>
         <div className="flex flex-col bg-[#f2f2ff] m-auto p-auto">
-          <h1 className="flex py-5 px-5 lg:mx-[-40] md:mx-20 mx-5 font-bold text-4xl text-gray-800">
+          <h1 className="flex py-5 px-5 mx-5 font-bold text-4xl text-gray-800">
             My Works
           </h1>
           <div className="w-5/6 m-auto flex overflow-x-scroll pb-10 hide-scroll-bar">
