@@ -3,16 +3,18 @@ import React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useRef } from "react";
+import Image from "next/image";
 
 const Navbar = () => {
   const pathName = usePathname();
   const sideBarRef = useRef();
   return (
     <nav className="logo flex items-center justify-around bg-[#f2f2ff] max-[715px]:justify-between text-black p-4 shadow-md sticky top-0">
-      <img
+      <Image
         className="invert max-[915px]:w-16"
         width={120}
-        src="favicon.ico"
+        height={120}
+        src="/favicon.ico"
         alt=""
       />
       <ul className="flex items-center justify-center gap-8 max-[715px]:hidden font-semibold">

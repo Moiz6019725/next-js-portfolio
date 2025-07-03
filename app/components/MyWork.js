@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const MyWork = () => {
   return (
@@ -12,7 +13,13 @@ const MyWork = () => {
             <div className="flex flex-nowrap lg:ml-7 md:ml-20 gap-x-5">
               <div className="w-80 bg-white border border-white rounded-lg shadow-md">
                 <a href="#">
-                  <img className="rounded-t-lg" src="/video-player.jpg" alt="" />
+                  <Image
+                    className="rounded-t-lg"
+                    src="/video-player.jpg"
+                    height={200}
+                    width={200}
+                    alt=""
+                  />
                 </a>
                 <div className="p-5">
                   <a href="#">
@@ -44,10 +51,15 @@ const MyWork = () => {
                 </div>
               </div>
 
-
               <div className="w-80 bg-white border border-white rounded-lg shadow-md">
                 <a href="#">
-                  <img className="rounded-t-lg" src="/dentist-website.jpg" alt="" />
+                  <Image
+                    className="rounded-t-lg"
+                    src="/dentist-website.jpg"
+                    height={200}
+                    width={200}
+                    alt=""
+                  />
                 </a>
                 <div className="p-5">
                   <a href="#">
@@ -81,7 +93,13 @@ const MyWork = () => {
 
               <div className="w-80 bg-white border border-white rounded-lg shadow-md">
                 <a href="#">
-                  <img className="rounded-t-lg" src="/passop.jpg" alt="" />
+                  <Image
+                    className="rounded-t-lg"
+                    src="/passop.jpg"
+                    height={200}
+                    width={200}
+                    alt=""
+                  />
                 </a>
                 <div className="p-5">
                   <a href="#">
@@ -115,7 +133,13 @@ const MyWork = () => {
 
               <div className="w-80 bg-white border border-white rounded-lg shadow-md">
                 <a href="#">
-                  <img className="rounded-t-lg" src="/todo-app.jpg" alt="" />
+                  <Image
+                    className="rounded-t-lg"
+                    src="/todo-app.jpg"
+                    alt=""
+                    height={200}
+                    width={200}
+                  />
                 </a>
                 <div className="p-5">
                   <a href="#">
@@ -149,7 +173,13 @@ const MyWork = () => {
 
               <div className="w-80 bg-white border border-white rounded-lg shadow-md">
                 <a href="#">
-                  <img className="rounded-t-lg" src="/twitter-clone.jpg" alt="" />
+                  <Image
+                    className="rounded-t-lg"
+                    src="/twitter-clone.jpg"
+                    height={200}
+                    width={200}
+                    alt=""
+                  />
                 </a>
                 <div className="p-5">
                   <a href="#">
@@ -183,7 +213,13 @@ const MyWork = () => {
 
               <div className="w-80 bg-white border border-white rounded-lg shadow-md">
                 <a href="#">
-                  <img className="rounded-t-lg" src="/spotify-clone.jpg" alt="" />
+                  <Image
+                    className="rounded-t-lg"
+                    src="/spotify-clone.jpg"
+                    height={200}
+                    width={200}
+                    alt=""
+                  />
                 </a>
                 <div className="p-5">
                   <a href="#">
@@ -217,7 +253,13 @@ const MyWork = () => {
 
               <div className="w-80 bg-white border border-white rounded-lg shadow-md">
                 <a href="#">
-                  <img className="rounded-t-lg" src="/get-me-chai.jpg" alt="" />
+                  <Image
+                    className="rounded-t-lg"
+                    src="/get-me-chai.jpg"
+                    height={200}
+                    width={200}
+                    alt=""
+                  />
                 </a>
                 <div className="p-5">
                   <a href="#">
@@ -247,7 +289,6 @@ const MyWork = () => {
                     </svg>
                   </a>
                 </div>
-
               </div>
             </div>
           </div>
