@@ -16,8 +16,8 @@ const MyWork = () => {
                   <Image
                     className="rounded-t-lg"
                     src="/video-player.jpg"
-                    height={200}
-                    width={200}
+                    height={143}
+                    width={318}
                     alt=""
                   />
                 </a>
@@ -56,8 +56,8 @@ const MyWork = () => {
                   <Image
                     className="rounded-t-lg"
                     src="/dentist-website.jpg"
-                    height={200}
-                    width={200}
+                    height={143}
+                    width={318}
                     alt=""
                   />
                 </a>
@@ -96,8 +96,8 @@ const MyWork = () => {
                   <Image
                     className="rounded-t-lg"
                     src="/passop.jpg"
-                    height={200}
-                    width={200}
+                    height={143}
+                    width={318}
                     alt=""
                   />
                 </a>
@@ -137,8 +137,8 @@ const MyWork = () => {
                     className="rounded-t-lg"
                     src="/todo-app.jpg"
                     alt=""
-                    height={200}
-                    width={200}
+                    height={143}
+                    width={318}
                   />
                 </a>
                 <div className="p-5">
@@ -176,8 +176,8 @@ const MyWork = () => {
                   <Image
                     className="rounded-t-lg"
                     src="/twitter-clone.jpg"
-                    height={200}
-                    width={200}
+                    height={143}
+                    width={318}
                     alt=""
                   />
                 </a>
@@ -216,8 +216,8 @@ const MyWork = () => {
                   <Image
                     className="rounded-t-lg"
                     src="/spotify-clone.jpg"
-                    height={200}
-                    width={200}
+                    height={143}
+                    width={318}
                     alt=""
                   />
                 </a>
@@ -256,8 +256,8 @@ const MyWork = () => {
                   <Image
                     className="rounded-t-lg"
                     src="/get-me-chai.jpg"
-                    height={200}
-                    width={200}
+                    height={143}
+                    width={318}
                     alt=""
                   />
                 </a>

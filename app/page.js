@@ -10,8 +10,8 @@ export default function Home() {
   };
   return (
     <>
-      <div className="flex items-center min-h-[calc(84vh+4px)] gap-x-4 max-[915px]:flex-col-reverse">
-        <div className="w-full h-full place-content-center pl-[6%] max-[915px]:text-center max-[915px]:py-16">
+      <div className="flex items-center h-screen gap-x-4 max-[915px]:flex-col-reverse">
+        <div className="w-full  flex flex-col justify-center pl-[6%] max-[915px]:items-center max-[915px]:h-[40vh]">
           <h1 className="text-7xl font-semibold max-[915px]:text-3xl">
             I am Moiz <span className="text-[#0de6e6]">Rehman</span>
           </h1>
@@ -22,7 +22,7 @@ export default function Home() {
           </p>
           <button
             onClick={downloadCV}
-            className="max-[915px]:text-sm hover:cursor-pointer btn bg-[#0de6e6] text-black px-4 py-3 rou rounded-full mt-2"
+            className="w-60 max-[915px]:text-sm hover:cursor-pointer btn bg-[#0de6e6] text-black px-4 py-3 rou rounded-full mt-2"
           >
             Download CV
           </button>
@@ -44,13 +44,13 @@ export default function Home() {
             </a>
           </div>
         </div>
-        <div className="w-full h-full flex items-center justify-center max-[915px]:pt-16">
+        <div className="w-full flex items-center justify-center">
           <Image
             src="/profilepic.jpg"
             alt="Hero Image"
             width={300}
             height={300}
-            className="max-[915px]:w-1/2 object-cover rounded-full border-4 border-gradient shadow-[0_0_10px_10px_#343D3F] hover:shadow-[0_0_20px_rgba(0,0,0,0.7)] transition-shadow duration-300 ease-in-out"
+            className=" object-cover rounded-full border-4 border-gradient shadow-[0_0_10px_10px_#343D3F] hover:shadow-[0_0_20px_rgba(0,0,0,0.7)] transition-shadow duration-300 ease-in-out"
           />
         </div>
       </div>

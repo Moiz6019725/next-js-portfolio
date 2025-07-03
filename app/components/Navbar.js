@@ -69,17 +69,17 @@ const Navbar = () => {
       </ul>
 
       <div className="flex items-center justify-center gap-4 max-[715px]:gap-2">
-        <button className="bg-[#0be7e7] px-3 py-2 max-[715px]:hidden rounded-md text-black font-semibold hover:bg-red-700 transition-colors">
+        <button className="bg-[#0be7e7] px-3 py-2 max-[715px]:hidden rounded-md text-black font-semibold hover:bg-[#5eb6b6] transition-colors">
           <Link href="#" className="btn max-[915px]:text-sm">
             Hire Me
           </Link>
         </button>
         <button
           onClick={(e) => {
-            if (sideBarRef.current.style.display === "block") {
-              sideBarRef.current.style.display = "none";
+            if (sideBarRef.current.style.right === "-100%") {
+              sideBarRef.current.style.right = "0";
             } else {
-              sideBarRef.current.style.display = "block";
+              sideBarRef.current.style.right = "-100%";
             }
           }}
           className="sidebar cursor-pointer hidden max-[715px]:block"
@@ -89,13 +89,18 @@ const Navbar = () => {
       </div>
       <div
         ref={sideBarRef}
-        className="sidebar h-screen w-2/3 bg-[#f2f2ff] absolute right-0 top-16 z-10 hidden shadow-2xl"
+        className="sidebar h-screen w-2/3 bg-[#f2f2ff] absolute right-[-100%] top-16 z-10 shadow-2xl transition-all duration-300 ease-in-out"
       >
+        <button onClick={()=>{
+          sideBarRef.current.style.right = "-100%";
+        }}>
+          <i className="px-3 fa-solid fa-xmark"></i>
+        </button>
         <ul className="flex flex-col items-center justify-center gap-8 pt-8 font-semibold">
           <li>
             <Link
               className={
-                pathName === "/" ? "border-b-2 border-b-[#00FFFF]" : ""
+                pathName === "/" ? "border-b-2 border-b-[#00FFFF] px-5" : ""
               }
               href="/"
             >
@@ -105,7 +110,7 @@ const Navbar = () => {
           <li>
             <Link
               className={
-                pathName === "/blog" ? "border-b-2 border-b-[#00FFFF]" : ""
+                pathName === "/blog" ? "border-b-2 border-b-[#00FFFF] px-5" : ""
               }
               href="/blog"
             >
@@ -115,7 +120,7 @@ const Navbar = () => {
           <li>
             <Link
               className={
-                pathName === "/services" ? "border-b-2 border-b-[#00FFFF]" : ""
+                pathName === "/services" ? "border-b-2 border-b-[#00FFFF] px-5" : ""
               }
               href="/services"
             >
@@ -125,7 +130,7 @@ const Navbar = () => {
           <li>
             <Link
               className={
-                pathName === "/about" ? "border-b-2 border-b-[#00FFFF]" : ""
+                pathName === "/about" ? "border-b-2 border-b-[#00FFFF] px-5" : ""
               }
               href="/linkabout"
             >
@@ -135,7 +140,7 @@ const Navbar = () => {
           <li>
             <Link
               className={
-                pathName === "/contact" ? "border-b-2 border-b-[#00FFFF]" : ""
+                pathName === "/contact" ? "border-b-2 border-b-[#00FFFF] px-5" : ""
               }
               href="/contact"
             >
