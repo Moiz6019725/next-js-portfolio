@@ -13,7 +13,7 @@ export default function Home() {
       <div className="flex items-center min-h-[calc(84vh+4px)] gap-x-4 max-[915px]:flex-col-reverse">
         <div className="w-full h-full place-content-center pl-[6%] max-[915px]:text-center max-[915px]:py-16">
           <h1 className="text-7xl font-semibold max-[915px]:text-3xl">
-            I'm Moiz <span className="text-[#0de6e6]">Rehman</span>
+            I am Moiz <span className="text-[#0de6e6]">Rehman</span>
           </h1>
           <p className="text-[#343D3F] leading-[32px] text-2xl max-[915px]:text-xl">
             I am a Full Stack Mern web app developer

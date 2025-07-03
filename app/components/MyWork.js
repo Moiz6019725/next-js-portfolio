@@ -104,7 +104,7 @@ const MyWork = () => {
                 <div className="p-5">
                   <a href="#">
                     <h5 className="mb-2 text-2xl font-bold tracking-tight">
-                      Password's Saver (local storage)
+                      Passwords Saver (local storage)
                     </h5>
                   </a>
                   <a
