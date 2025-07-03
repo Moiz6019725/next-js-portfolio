@@ -1,103 +1,64 @@
+"use client";
 import Image from "next/image";
+import MyWork from "./components/MyWork";
+import Footer from "./components/Footer";
+import AboutSection from "./components/AboutSection";
 
 export default function Home() {
+  const downloadCV = () => {
+    window.location.href = "/cv.pdf"; // Change this to your CV URL
+  };
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              app/page.js
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+    <>
+      <div className="flex items-center min-h-[calc(84vh+4px)] gap-x-4 max-[915px]:flex-col-reverse">
+        <div className="w-full h-full place-content-center pl-[6%] max-[915px]:text-center max-[915px]:py-16">
+          <h1 className="text-7xl font-semibold max-[915px]:text-3xl">
+            I'm Moiz <span className="text-[#0de6e6]">Rehman</span>
+          </h1>
+          <p className="text-[#343D3F] leading-[32px] text-2xl max-[915px]:text-xl">
+            I am a Full Stack Mern web app developer
+            <br />
+            with at least 6 months of experience.
+          </p>
+          <button
+            onClick={downloadCV}
+            className="max-[915px]:text-sm hover:cursor-pointer btn bg-[#0de6e6] text-black px-4 py-3 rou rounded-full mt-2"
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+            Download CV
+          </button>
+          <div className="icons mt-3">
+            <a href="https://www.linkedin.com/in/moiz-rehman-6674a5203/">
+              <i className="hover:text-[#0de6e6] text-4xl max-[915px]:text-2xl pr-3 text-black fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://www.facebook.com/moiz.rehman.37604">
+              <i className="hover:text-[#0de6e6] text-4xl max-[915px]:text-2xl pr-3 text-black fa-brands fa-facebook"></i>
+            </a>
+            <a href="">
+              <i className="hover:text-[#0de6e6] text-4xl max-[915px]:text-2xl pr-3 text-black fab fa-twitter"></i>
+            </a>
+            <a href="https://wa.me/923157378892">
+              <i className="hover:text-[#0de6e6] text-4xl max-[915px]:text-2xl pr-3 text-black fab fa-whatsapp"></i>
+            </a>
+            <a href="https://www.instagram.com/moizur36/">
+              <i className="hover:text-[#0de6e6] text-4xl max-[915px]:text-2xl pr-3 text-black fab fa-instagram"></i>
+            </a>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <div className="w-full h-full flex items-center justify-center max-[915px]:pt-16">
           <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
+            src="/profilepic.jpg"
+            alt="Hero Image"
+            width={300}
+            height={300}
+            className="max-[915px]:w-1/2 object-cover rounded-full border-4 border-gradient shadow-[0_0_10px_10px_#343D3F] hover:shadow-[0_0_20px_rgba(0,0,0,0.7)] transition-shadow duration-300 ease-in-out"
           />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+        </div>
+      </div>
+      <div className="divider h-[1px] w-[80%] m-auto bg-gray-300"></div>
+      <AboutSection />
+      <div className="divider h-[1px] w-[80%] m-auto bg-gray-300"></div>
+      <MyWork />
+      <Footer />
+    </>
   );
 }
