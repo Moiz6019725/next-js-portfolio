@@ -11,11 +11,11 @@ export default function Home() {
   return (
     <>
       <div className="flex items-center h-screen gap-x-4 max-[915px]:flex-col-reverse">
-        <div className="w-full  flex flex-col justify-center pl-[6%] max-[915px]:items-center max-[915px]:text-center max-[915px]:h-[40vh]">
+        <div className="w-full  flex flex-col justify-center pl-[6%] max-[915px]:items-center max-[915px]:h-[40vh]">
           <h1 className="text-7xl font-semibold max-[915px]:text-3xl">
             I am Moiz <span className="text-[#0de6e6]">Rehman</span>
           </h1>
-          <p className="text-[#343D3F] leading-[32px] text-2xl max-[915px]:text-xl">
+          <p className="text-[#343D3F] leading-[32px] text-2xl max-[915px]:text-xl max-[915px]:text-center">
             I am a Full Stack Mern web app developer
             <br />
             with at least 6 months of experience.
