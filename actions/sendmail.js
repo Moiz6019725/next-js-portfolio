@@ -1,24 +1,20 @@
 "use server";
-import emailSender from "nodemailer-email-sender";
+import {Resend} from "resend"
 
 export const sendMessage = async (e) => {
   const email = e.get("email");
   const subject = e.get("subject");
   const message = e.get("message");
+  const resend= new Resend("re_NDwuv96F_PLgLrEQoH6Qzmq8bm9n6qRfm");
 
-   emailSender({
-      mailService: 'gmail',
-      senderUser: 'moizurrehman01', // YOUR Gmail username
-      senderEmail: 'moizurrehman01@gmail.com', // YOUR Gmail
-      senderPassword: process.env.GMAIL_APP_PASSWORD, // from .env
-      receiverEmail: 'moizurrehman01@gmail.com', // YOUR Gmail
-      subject: `Contact Form: ${subject}`,
-      html: `
-        <h3>New message from contact form</h3>
-        <p><strong>Sender Email:</strong> ${email}</p>
-        <p><strong>Subject:</strong> ${subject}</p>
-        <p><strong>Message:</strong><br/>${message}</p>
-      `,
-    });
-  console.log("done");
+  resend.emails.send({
+    from: email,
+    to: "moizurrehman01@gmail.com",
+    subject: subject,
+    html: `<p>${message}</p>`,    
+  }).then((data) => {
+    console.log("Email sent successfully:", data);
+  }).catch((error) => {
+    console.error("Error sending email:", error);
+  });
 };
