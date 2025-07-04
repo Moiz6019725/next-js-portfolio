@@ -6,7 +6,7 @@ import AboutSection from "./components/AboutSection";
 
 export default function Home() {
   const downloadCV = () => {
-    window.location.href = "/cv.pdf"; // Change this to your CV URL
+    window.location.href = "/CV-Moiz.pdf"; // Change this to your CV URL
   };
   return (
     <>
