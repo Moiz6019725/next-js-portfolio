@@ -6,23 +6,23 @@ import AboutSection from "./components/AboutSection";
 
 export default function Home() {
   const downloadCV = () => {
-    window.location.href = "/cv.pdf"; // Change this to your CV URL
+    window.location.href = "/CV-Moiz.pdf"; // Change this to your CV URL
   };
   return (
     <>
-      <div className="flex items-center h-screen gap-x-4 max-[915px]:flex-col-reverse">
-        <div className="w-full  flex flex-col justify-center pl-[6%] max-[915px]:items-center max-[915px]:h-[40vh]">
+      <div className="flex h-screen justify-evenly gap-x-4 max-[915px]:flex-col-reverse">
+        <div className="w-full flex flex-col justify-center items-start pl-[6%] max-[915px]:items-center ">
           <h1 className="text-7xl font-semibold max-[915px]:text-3xl">
             I am Moiz <span className="text-[#0de6e6]">Rehman</span>
           </h1>
-          <p className="text-[#343D3F] leading-[32px] text-2xl max-[915px]:text-xl">
+          <p className="text-[#343D3F] leading-[32px] text-2xl max-[915px]:text-xl max-[915px]:text-center">
             I am a Full Stack Mern web app developer
             <br />
             with at least 6 months of experience.
           </p>
           <button
             onClick={downloadCV}
-            className="w-60 max-[915px]:text-sm hover:cursor-pointer btn bg-[#0de6e6] text-black px-4 py-3 rou rounded-full mt-2"
+            className=" max-[915px]:text-sm hover:cursor-pointer btn bg-[#0de6e6] hover:bg-[#0dd8e6] text-black px-4 py-3 rou rounded-full mt-2"
           >
             Download CV
           </button>
@@ -48,8 +48,8 @@ export default function Home() {
           <Image
             src="/profilepic.jpg"
             alt="Hero Image"
-            width={300}
-            height={300}
+            width={280}
+            height={280}
             className=" object-cover rounded-full border-4 border-gradient shadow-[0_0_10px_10px_#343D3F] hover:shadow-[0_0_20px_rgba(0,0,0,0.7)] transition-shadow duration-300 ease-in-out"
           />
         </div>

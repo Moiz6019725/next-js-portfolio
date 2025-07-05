@@ -3,11 +3,11 @@ import React from "react";
 const AboutSection = () => {
   return (
     <>
-      <div className="py-10">
-        <h2 className="gradient-text text-5xl font-bold text-center pb-10 max-[915px]:text-3xl">
+      <div className="py-6">
+        <h2 className="gradient-text text-5xl font-bold text-center pb-4 max-[915px]:text-3xl">
           About Me
         </h2>
-        <div className="w-[80%] m-auto text-center">
+        <div className="w-[80%] m-auto text-justify">
           <p className="text-xl max-[915px]:text-sm leading-8 text-gray-700 max-[915px]:leading-6">
             I am a Full Stack Mern web app developer with at least 6 months of
             experience. I have worked on various projects, including
