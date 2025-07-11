@@ -10,7 +10,7 @@ export default function Home() {
   };
   return (
     <>
-      <div className="flex h-[85vh] justify-evenly gap-x-4 max-[915px]:flex-col-reverse">
+      <div className="flex h-screen justify-evenly gap-x-4 max-[915px]:flex-col-reverse">
         <div className="w-full flex flex-col justify-center items-start pl-[6%] max-[915px]:items-center max-[915px]:text-center">
           <h1 className="text-7xl font-semibold max-[915px]:text-3xl">
             I am Moiz <span className="text-[#0de6e6]">Rehman</span>
