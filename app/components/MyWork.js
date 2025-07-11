@@ -9,7 +9,7 @@ const MyWork = () => {
           <h1 className="flex py-5 px-5 mx-5 font-bold text-4xl text-gray-800">
             My Works
           </h1>
-          <div className="w-5/6 m-auto flex overflow-x-scroll pb-10 hide-scroll-bar">
+          <div className="w-5/6 m-auto flex custom-scrollbar overflow-x-scroll pb-10 hide-scroll-bar">
             <div className="flex flex-nowrap lg:ml-7 md:ml-20 gap-x-5">
               <div className="w-80 bg-white border border-white rounded-lg shadow-md">
                 <a href="#">

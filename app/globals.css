@@ -14,3 +14,26 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+/* Hide scrollbar arrows and style scrollbar for WebKit browsers */
+.custom-scrollbar::-webkit-scrollbar {
+  height: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #f0f0f0;
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Hide scrollbar corner buttons (left & right arrows) */
+.custom-scrollbar::-webkit-scrollbar-button {
+  display: none;
+}

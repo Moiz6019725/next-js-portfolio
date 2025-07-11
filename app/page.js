@@ -10,12 +10,12 @@ export default function Home() {
   };
   return (
     <>
-      <div className="flex h-screen justify-evenly gap-x-4 max-[915px]:flex-col-reverse">
-        <div className="w-full flex flex-col justify-center items-start pl-[6%] max-[915px]:items-center ">
+      <div className="flex h-[85vh] justify-evenly gap-x-4 max-[915px]:flex-col-reverse">
+        <div className="w-full flex flex-col justify-center items-start pl-[6%] max-[915px]:items-center max-[915px]:text-center">
           <h1 className="text-7xl font-semibold max-[915px]:text-3xl">
             I am Moiz <span className="text-[#0de6e6]">Rehman</span>
           </h1>
-          <p className="text-[#343D3F] leading-[32px] text-2xl max-[915px]:text-xl max-[915px]:text-center">
+          <p className="text-[#343D3F] leading-[32px] text-2xl max-[915px]:text-xl">
             I am a Full Stack Mern web app developer
             <br />
             with at least 6 months of experience.
@@ -50,7 +50,7 @@ export default function Home() {
             alt="Hero Image"
             width={280}
             height={280}
-            className=" object-cover rounded-full border-4 border-gradient shadow-[0_0_10px_10px_#343D3F] hover:shadow-[0_0_20px_rgba(0,0,0,0.7)] transition-shadow duration-300 ease-in-out"
+            className=" max-[915px]:h-[210px]  max-[915px]:w-[210px] object-cover rounded-full border-4 border-gradient shadow-[0_0_10px_10px_#343D3F] hover:shadow-[0_0_20px_rgba(0,0,0,0.7)] transition-shadow duration-300 ease-in-out"
           />
         </div>
       </div>
