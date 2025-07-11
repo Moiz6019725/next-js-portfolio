@@ -50,7 +50,7 @@ export default function Home() {
             alt="Hero Image"
             width={280}
             height={280}
-            className=" object-cover rounded-full border-4 border-gradient shadow-[0_0_10px_10px_#343D3F] hover:shadow-[0_0_20px_rgba(0,0,0,0.7)] transition-shadow duration-300 ease-in-out"
+            className="bg-red-800 object-cover rounded-full border-4 border-gradient shadow-[0_0_10px_10px_#343D3F] hover:shadow-[0_0_20px_rgba(0,0,0,0.7)] transition-shadow duration-300 ease-in-out"
           />
         </div>
       </div>
