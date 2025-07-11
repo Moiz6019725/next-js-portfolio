@@ -52,6 +52,7 @@ export default function Home() {
             height={280}
             className="bg-red-800 object-cover rounded-full border-4 border-gradient shadow-[0_0_10px_10px_#343D3F] hover:shadow-[0_0_20px_rgba(0,0,0,0.7)] transition-shadow duration-300 ease-in-out"
           />
+              <span>What the fuck man</span>
         </div>
       </div>
       <div className="divider h-[1px] w-[80%] m-auto bg-gray-300"></div>
